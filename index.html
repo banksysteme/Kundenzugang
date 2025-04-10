@@ -21,9 +21,21 @@
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     }
 
-    h2, h3 {
+    .logo {
+      display: block;
+      margin: 0 auto 20px;
+      max-width: 260px;
+    }
+
+    h2 {
       text-align: center;
       color: #000;
+    }
+
+    h3 {
+      text-align: left;
+      color: #000;
+      margin-bottom: 10px;
     }
 
     label {
@@ -43,10 +55,11 @@
     }
 
     .info-box {
-      background-color: #f0f0f0;
+      background-color: #ffffff;
       border-radius: 8px;
       padding: 15px;
       margin-top: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     }
 
     .info-box p, .info-box li {
@@ -74,6 +87,7 @@
 </head>
 <body>
   <div class="container" id="login-container">
+    <img class="logo" src="https://banksysteme.github.io/szkb/logo-szkb.png" alt="Schwyzer Kantonalbank Logo">
     <h2>Login</h2>
     <label for="username">Benutzername</label>
     <input type="text" id="username">
@@ -85,6 +99,7 @@
   </div>
 
   <div class="container" id="dashboard" style="display:none">
+    <img class="logo" src="https://banksysteme.github.io/szkb/logo-szkb.png" alt="Schwyzer Kantonalbank Logo">
     <h2>Sicherheitskonto</h2>
 
     <div class="info-box">
