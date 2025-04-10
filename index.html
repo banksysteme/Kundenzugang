@@ -83,6 +83,18 @@
       border-radius: 6px;
       cursor: pointer;
     }
+
+    .footer {
+      text-align: center;
+      color: #888;
+      font-size: 14px;
+      padding: 30px 20px 40px;
+      background-color: #fff;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+      max-width: 450px;
+      margin: 0 auto;
+    }
   </style>
 </head>
 <body>
@@ -105,8 +117,7 @@
 
     <div class="info-box">
       <h3>Kontostand</h3>
-      <p><strong>CHF 23.09</strong></p> 
-      <p>(entspricht EUR 25.00 bei Kurs 0.923621)</p>
+      <p><strong>CHF 23.09</strong> (entspricht EUR 25.00 bei Kurs 0.923621)</p>
     </div>
 
     <div class="info-box">
@@ -122,62 +133,61 @@
       <p>KBSZCH22XXX</p>
     </div>
 
-    <div class="info-box">
-      <h3>Letzte Transaktion</h3>
-<div style="display: flex; flex-direction: column; gap: 20px;">
+    <h3>Letzte Transaktion</h3>
+    <div style="display: flex; flex-direction: column; gap: 20px;">
+      <div class="info-box">
+        <p class="label">Buchungsdatum:</p>
+        <p>08.04.2025</p>
 
-  <!-- Original Transaction -->
-  <div class="info-box">
-    <p class="label">Buchungsdatum:</p>
-    <p>08.04.2025</p>
+        <p class="label">Betrag CHF:</p>
+        <p>23.09</p>
 
-    <p class="label">Betrag CHF:</p>
-    <p>23.09</p>
+        <p class="label">Ref.-Nr.:</p>
+        <p>1621934699</p>
 
-    <p class="label">Ref.-Nr.:</p>
-    <p>1621934699</p>
+        <p class="label">Buchungstext:</p>
+        <p>
+          Zahlungseingang / Ref.-Nr. 1621934699<br>
+          Dr. Gunter Frenzel<br>
+          Am Orangeriepark 14<br>
+          13156 Berlin<br>
+          Deutschland<br>
+          Mitteilung: PR Group<br>
+          Betrag: EUR 25.00<br>
+          Wechselkurs: 0.923621 (EUR/CHF)
+        </p>
+      </div>
 
-    <p class="label">Buchungstext:</p>
-    <p>
-      Zahlungseingang / Ref.-Nr. 1621934699<br>
-      Dr. Gunter Frenzel<br>
-      Am Orangeriepark 14<br>
-      13156 Berlin<br>
-      Deutschland<br>
-      Mitteilung: PR Group<br>
-      Betrag: EUR 25.00<br>
-      Wechselkurs: 0.923621 (EUR/CHF)
-    </p>
-  </div>
+      <div class="info-box">
+        <p class="label">Buchungsdatum:</p>
+        <p>07.04.2025</p>
 
-  <!-- New Transaction -->
-  <div class="info-box">
-    <p class="label">Buchungsdatum:</p>
-    <p>07.04.2025</p>
+        <p class="label">Betrag CHF:</p>
+        <p>50.00</p>
 
-    <p class="label">Betrag CHF:</p>
-    <p>50.00</p>
+        <p class="label">Ref.-Nr.:</p>
+        <p>1621934700</p>
 
-    <p class="label">Ref.-Nr.:</p>
-    <p>1621934700</p>
-
-    <p class="label">Buchungstext:</p>
-    <p>
-      Zahlungseingang / Ref.-Nr. 1621934700<br>
-      Maria Schulte<br>
-      Lindenstraße 22<br>
-      50674 Köln<br>
-      Deutschland<br>
-      Mitteilung: Media Payment<br>
-      Betrag: EUR 54.00<br>
-      Wechselkurs: 0.9259 (EUR/CHF)
-    </p>
-  </div>    
-    
-</div>
+        <p class="label">Buchungstext:</p>
+        <p>
+          Zahlungseingang / Ref.-Nr. 1621934700<br>
+          Maria Schulte<br>
+          Lindenstraße 22<br>
+          50674 Köln<br>
+          Deutschland<br>
+          Mitteilung: Media Payment<br>
+          Betrag: EUR 54.00<br>
+          Wechselkurs: 0.9259 (EUR/CHF)
+        </p>
+      </div>
+    </div>
 
     <button class="button" onclick="logout()">Abmelden</button>
   </div>
+
+  <footer class="footer">
+    © 2025 Schwyzer Kantonalbank – Ihr Partner für sichere Finanzlösungen
+  </footer>
 
   <script>
     function checkLogin() {
@@ -198,10 +208,5 @@
       document.getElementById('login-container').style.display = 'block';
     }
   </script>
-
-   <div class="footer">
-      © 2025 Schwyzer Kantonalbank – Ihr Partner für sichere Finanzlösungen
-    </div>
-  
 </body>
 </html>
