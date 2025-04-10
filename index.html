@@ -13,7 +13,7 @@
     }
 
     .container {
-      max-width: 450px;
+      max-width: 800px;
       margin: 60px auto;
       background-color: #fff;
       border-radius: 12px;
@@ -98,8 +98,9 @@
     <button class="button" onclick="checkLogin()">Anmelden</button>
   </div>
 
-  <p style="text-align:center; font-size: 18px; margin-bottom: 10px;">Willkommen, Dr. Gunter Frenzel</p>
-<p id="welcome" style="text-align:center; font-size: 18px; margin-bottom: 10px;"></p>
+  <div class="container" id="dashboard" style="display:none">
+    <img class="logo" src="https://www.szkb.ch/ResourcePackages/CorporateWebsite/assets/dist/img/szkb-logo.svg" alt="Schwyzer Kantonalbank Logo">
+    <p id="welcome" style="text-align:center; font-size: 18px; margin-bottom: 10px;"></p>
     <h2>Sicherheitskonto</h2>
 
     <div class="info-box">
@@ -108,8 +109,16 @@
     </div>
 
     <div class="info-box">
-      <h3>Kontoinhaber</h3>$2
-      <p><strong>CHF 23.09</strong> (entspricht EUR 25.00 bei Kurs 0.923621)</p>
+      <h3>Kontoinhaber</h3>
+      <p>Dr. Gunter Frenzel</p>
+      <p class="label">Kontonummer:</p>
+      <p>009631703644</p>
+      <p class="label">Bankleitzahl:</p>
+      <p>00777</p>
+      <p class="label">IBAN:</p>
+      <p>CH34 0077 7009 6317 0364 4</p>
+      <p class="label">BIC (SWIFT):</p>
+      <p>KBSZCH22XXX</p>
     </div>
 
     <div class="info-box">
