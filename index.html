@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontoansicht – Gunter Frenzel</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f6f6f6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 60px auto;
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    h2, h3 {
+      text-align: center;
+      color: #000;
+    }
+
+    .info-box {
+      background-color: #f0f0f0;
+      border-radius: 8px;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    .info-box p, .info-box li {
+      margin: 5px 0;
+    }
+
+    .label {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .button {
+      margin-top: 30px;
+      width: 100%;
+      padding: 14px;
+      background-color: #ef2c30;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Kontoübersicht</h2>
+
+    <div class="info-box">
+      <h3>Kontoinhaber</h3>
+      <p>Dr. Gunter Frenzel</p>
+    </div>
+
+    <div class="info-box">
+      <h3>Kontostand</h3>
+      <p><strong>CHF 23.09</strong> (entspricht EUR 25.00 bei Kurs 0.923621)</p>
+      <p class="label">IBAN:</p>
+      <p>DE88 1234 1234 5678 9012 00</p>
+    </div>
+
+    <div class="info-box">
+      <h3>Letzte Transaktion</h3>
+      <p class="label">Buchungsdatum:</p>
+      <p>08.04.2025</p>
+
+      <p class="label">Betrag CHF:</p>
+      <p>23.09</p>
+
+      <p class="label">Ref.-Nr.:</p>
+      <p>1621934699</p>
+
+      <p class="label">Buchungstext:</p>
+      <p>
+        Zahlungseingang / Ref.-Nr. 1621934699<br>
+        Dr. Gunter Frenzel<br>
+        Am Orangeriepark 14<br>
+        13156 Berlin<br>
+        Deutschland<br>
+        Mitteilung: PR Group<br>
+        Betrag: EUR 25.00<br>
+        Wechselkurs: 0.923621 (EUR/CHF)
+      </p>
+    </div>
+
+    <button class="button">Nachforschung starten</button>
+  </div>
+</body>
+</html>
