@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kontoansicht – Gunter Frenzel</title>
+  <title>Login – Gunter Frenzel</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -24,6 +24,22 @@
     h2, h3 {
       text-align: center;
       color: #000;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    input {
+      width: 100%;
+      padding: 11px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      font-size: 15px;
     }
 
     .info-box {
@@ -57,7 +73,18 @@
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="container" id="login-container">
+    <h2>Login</h2>
+    <label for="username">Benutzername</label>
+    <input type="text" id="username">
+
+    <label for="password">Passwort</label>
+    <input type="password" id="password">
+
+    <button class="button" onclick="checkLogin()">Anmelden</button>
+  </div>
+
+  <div class="container" id="dashboard" style="display:none">
     <h2>Kontoübersicht</h2>
 
     <div class="info-box">
@@ -96,7 +123,26 @@
       </p>
     </div>
 
-    <button class="button">Nachforschung starten</button>
+    <button class="button" onclick="logout()">Abmelden</button>
   </div>
+
+  <script>
+    function checkLogin() {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      if (username === 'frenzel' && password === 'Frenzel2025-') {
+        document.getElementById('login-container').style.display = 'none';
+        document.getElementById('dashboard').style.display = 'block';
+      } else {
+        alert('Falscher Benutzername oder Passwort');
+      }
+    }
+
+    function logout() {
+      document.getElementById('dashboard').style.display = 'none';
+      document.getElementById('login-container').style.display = 'block';
+    }
+  </script>
 </body>
 </html>
